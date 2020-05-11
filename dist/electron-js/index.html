@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MyCrypto</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://0x.mycrypto.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://0x.mycrypto.com; manifest-src 'self'; font-src 'self' https://0x.mycrypto.com; img-src 'self' data: https://shapeshift.io; connect-src *; frame-src 'self' https://connect.trezor.io;" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="description"
+      content="MyCrypto is a free, open-source interface for interacting with the blockchain."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta property="og:title" content="MyCrypto" />
+    <meta property="og:url" content="https://mycrypto.com/" />
+    <meta property="og:description" content="MyCrypto is a free, open-source interface for interacting with the blockchain." />
+    <meta property="og:site_name" content="MyCrypto" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/common/assets/images/link-preview.png" />
+    <meta name="twitter:site" content="@MyCrypto" />
+    <meta name="twitter:creator" content="@MyCrypto" />
+    <meta name="google-site-verification" content="dRWkvANAUNAhNyMnTyc7M7S3lnucotMY8j8R-gsZhbo" />
+    <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" sizes="114x114" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="57x57" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-icon-76x76.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/apple-touch-startup-image-1536x2008.png"><link rel="icon" type="image/png" sizes="16x16" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/favicon-16x16.png"><link rel="icon" type="image/png" sizes="228x228" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/coast-228x228.png"><link rel="icon" type="image/png" sizes="32x32" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/favicon-32x32.png"><link rel="manifest" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/manifest.json"><link rel="shortcut icon" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/favicon.ico"><link rel="yandex-tableau-widget" href="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/yandex-browser-manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="MyCrypto"><meta name="application-name" content="MyCrypto"><meta name="mobile-web-app-capable" content="yes"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/mstile-144x144.png"><meta name="msapplication-config" content="common/assets/meta-87241acabc980fcbf00312cd4fb8e232/browserconfig.xml"><meta name="theme-color" content="#fff"><link href="./vendors~client.fbe947ca.css" rel="stylesheet" integrity="sha256-LIqf+qRzPrhMA2M0lBElGgcLA+Oy6Qw8O2Xj4BHi7So= sha384-uhnbLkltalPeMZpwtzZuAKIecz3EmEzmvrl4JVrRqaI3Ue3aO/UjxHMyiyKNZi6q" crossorigin="anonymous"><link href="./client.c45b838c.css" rel="stylesheet" integrity="sha256-EDaMxsQD+Fn5tGpB6V4BgAkiMyOWomPn147UiVf4BbE= sha384-Z1HOTFESn5BTj6o7aRNU7/+6tg7E+OcpAWp6Mw647vkOGRhqgX9jiKk5GDABsrkn" crossorigin="anonymous"></head>
+
+  <body>
+    <div id="app"></div>
+
+    <noscript class="NoScript">
+      <div class="NoScript-content">
+        <h2>You Must Enable Javascript to Continue</h2>
+        <p>
+          MyCrypto requires Javascript to run. There are no security vulnerabilities as a result of
+          enabling Javascript on MyCrypto, as we do not load any external scripts such as
+          advertisements or trackers.
+        </p>
+        <p>
+          If you are not sure why you are seeing this message, or are unsure of how to enable
+          Javascript, please visit
+          <a href="https://www.enable-javascript.com/" rel="noopener noreferrer" target="_blank"
+            >enable-javascript.com</a
+          >
+          to learn more.
+        </p>
+      </div>
+    </noscript>
+
+    <div class="BadBrowser" style="display: none;">
+      <div class="BadBrowser-content">
+        <h2>Your Browser is Out of Date</h2>
+        <p class="is-desktop">
+          MyCrypto requires certain features that your browser doesn't offer. Your browser may also
+          be missing security updates that could open you up to vulnerabilities. Please update your
+          browser, or switch to one of the following browsers to continue using MyCrypto.
+</p>
+<p class="is-desktop">
+          If you're using the Brave Browser, please ensure that you are not blocking all cookies.
+          You may block 3rd-party cookies, but MyCrypto will not function properly if all cookies are blocked.
+         
+        </p>
+        <p class="is-mobile">
+          MyCrypto requires certain features that your browser doesn't offer. Please use your
+          device's default browser, or switch to a laptop or desktop computer to continue using
+          MyCrypto.
+        </p>
+        <div class="BadBrowser-content-browsers is-desktop">
+          <a
+            class="BadBrowser-content-browsers-browser firefox"
+            href="https://www.mozilla.org/en-US/firefox/new/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span class="BadBrowser-content-browsers-browser-name"> Firefox </span>
+          </a>
+          <a
+            class="BadBrowser-content-browsers-browser chrome"
+            href="https://www.google.com/chrome/browser/desktop/index.html"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span class="BadBrowser-content-browsers-browser-name"> Chrome </span>
+          </a>
+          <a
+            class="BadBrowser-content-browsers-browser opera"
+            href="https://www.opera.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span class="BadBrowser-content-browsers-browser-name"> Opera </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://0x.mycrypto.com"></script>
+  <script type="text/javascript" src="./badBrowserCheckA.308c02b6a2d51bdf238d.js" integrity="sha256-0UGCXGNSd3A/UykgnMziXU8E/I9glMa/Ytxt4Mfny1E= sha384-FMjFMCnT6Ptn2v6sxlwWiGfLhP701lcfA6RntWumf9NKyqaxHpSSpbeCwYM81Bej" crossorigin="anonymous"></script><script type="text/javascript" src="./badBrowserCheckB.6c58fbf310d66be2991a.js" integrity="sha256-SvCVdQQJxwF3wb15SvLred6Jq1iy9dT64svYLqd1+IA= sha384-9OXPV1kQrU6+vHFu20NaRdYvEc1sKBkwNVW/FOBU+bJfvJBvClmGpUBAqN0AKUII" crossorigin="anonymous"></script><script type="text/javascript" src="./vendors~client~vendor.42a5b6b68d99bb8b5434.js" integrity="sha256-v3ymD15w5ewmh8azi8KO0qDrcPCX9iw1yqDoC3Bu7Ig= sha384-yxgNfGrgaIhdEhM/MTexNwX/dxN2mUKbVRrWINDNkaAsSWOCuy1yhI8VeTlkcA5O" crossorigin="anonymous"></script><script type="text/javascript" src="./vendors~client.4f829f7b95c1e22243c9.js" integrity="sha256-WWan2kGEPRIzupg8uQyxLnijNOQuTdfWnu5vbAaxJ8s= sha384-aEL1iwgvIpS5aWNVUqAL7BYlwNo1KxW9JCMY+ShKS/7AMgogoosakRruF/qxZEZa" crossorigin="anonymous"></script><script type="text/javascript" src="./client.719653cb9c9382509419.js" integrity="sha256-Ek/GNLEM5Y0dkKGFcccYRjuGYjF0C1UgV77RdI0vDx8= sha384-ieiWHhTScp/RmqYFCx14WqCYOBobtARHn3ZW+DEgHVWgzfUDlVO5+pt0orkzHoz7" crossorigin="anonymous"></script><script type="text/javascript" src="./vendor.2e4dc109d5a0b447c513.js" integrity="sha256-4xbt+FVU6YvrVMaMfP5axFpCtCC778vwMCcP0NOT7xQ= sha384-4Afv1qiu8hsVwPLX3Y0H8hxY6acT8JWaqOy1yup22sqGCmxh7yfXrqUqr5I9Fv0K" crossorigin="anonymous"></script></body>
+</html>

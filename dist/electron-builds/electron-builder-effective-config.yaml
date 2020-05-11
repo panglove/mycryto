@@ -1,0 +1,20 @@
+directories:
+  output: /root/MyCrypto/dist/electron-builds
+  buildResources: build
+  app: /root/MyCrypto/dist/electron-js
+appId: com.github.mycrypto.mycryptohq
+productName: MyCrypto
+mac:
+  category: public.app-category.finance
+  icon: /root/MyCrypto/electron-app/icons/icon.icns
+  compression: store
+win:
+  icon: /root/MyCrypto/electron-app/icons/icon.ico
+  compression: store
+linux:
+  category: Finance
+  icon: /root/MyCrypto/electron-app/icons/icon.png
+  compression: store
+publish: null
+extends: null
+electronVersion: 2.0.8
